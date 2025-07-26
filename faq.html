@@ -4,17 +4,288 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>常見問題 (FAQ) - Icallme</title>
-    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Microsoft JhengHei", sans-serif;
+            background-color: #f9f9f9;
+        }
+        header {
+            background-color: #3f51b5;
+            color: #fff;
+            padding: 1.5rem;
+            text-align: center;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .container {
+            max-width: 960px;
+            margin: 30px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #3f51b5;
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: #e8eaf6;
+            color: #3f51b5;
+            font-weight: 600;
+        }
+    </style>
 </head>
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">Icallme</a>
+<header>
+    常見問題 (FAQ)
+</header>
+<main class="container">
+    <h1>常見問題</h1>
+    <div class="accordion" id="faqAccordion">
+
+        <!-- FAQ 項目開始 -->
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                    怎麼升級方案？
+                </button>
+            </h2>
+            <div id="collapse1" class="accordion-collapse collapse show" aria-labelledby="faq1" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    至設定頁面選擇升級方案，即可享受更多鬧鐘數量與進階功能。免費版最多可設定 3 組鬧鐘。
+                </div>
+            </div>
         </div>
-    </nav>
-    <main class="container my-5">
-        <h1 class="mb-4">常見問題 (FAQ)</h1>
-        <p>（未來在此放置常見問題內容）</p>
-    </main>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2" aria-expanded="false" aria-controls="collapse2">
+                    為什麼有這麼多廣告？
+                </button>
+            </h2>
+            <div id="collapse2" class="accordion-collapse collapse" aria-labelledby="faq2" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    為了維持服務與開發，並支持小型開發者，我們會在部分頁面顯示廣告。若您希望移除，可考慮升級至付費方案。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq3">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3" aria-expanded="false" aria-controls="collapse3">
+                    要怎麼移除廣告？
+                </button>
+            </h2>
+            <div id="collapse3" class="accordion-collapse collapse" aria-labelledby="faq3" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    只要升級至月繳或年繳方案，即可完全移除所有廣告，享受更清爽的使用體驗。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq4">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4" aria-expanded="false" aria-controls="collapse4">
+                    我的鬧鐘資料會被刪除嗎？
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse collapse" aria-labelledby="faq4" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    鬧鐘資料皆保存在本機裝置中，刪除 App 或重新安裝將會清除所有設定。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq5">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5" aria-expanded="false" aria-controls="collapse5">
+                    為什麼重新安裝後提醒次數紀錄不見了？
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse collapse" aria-labelledby="faq5" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    提醒次數資料是儲存在本機裝置內，當您移除或重新安裝 App 時，所有設定和累積次數都會一併被清除。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq6">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6" aria-expanded="false" aria-controls="collapse6">
+                    如何調整鬧鐘音量？
+                </button>
+            </h2>
+            <div id="collapse6" class="accordion-collapse collapse" aria-labelledby="faq6" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    請透過手機的音量鍵調整『媒體音量』，鬧鐘語音使用的是系統媒體聲道，與鈴聲音量無關。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq7">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7" aria-expanded="false" aria-controls="collapse7">
+                    如何刪除已設定的鬧鐘？
+                </button>
+            </h2>
+            <div id="collapse7" class="accordion-collapse collapse" aria-labelledby="faq7" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    在主畫面向左滑動鬧鐘卡片，即可看到刪除按鈕，點擊後可移除該鬧鐘設定。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq8">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8" aria-expanded="false" aria-controls="collapse8">
+                    為什麼無法建立更多鬧鐘？
+                </button>
+            </h2>
+            <div id="collapse8" class="accordion-collapse collapse" aria-labelledby="faq8" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    免費版本最多只能建立 3 個提醒。如果需要建立更多提醒，請升級至專業方案，解鎖20組提醒功能。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq9">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9" aria-expanded="false" aria-controls="collapse9">
+                    免費編輯次數是什麼？
+                </button>
+            </h2>
+            <div id="collapse9" class="accordion-collapse collapse" aria-labelledby="faq9" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    可用於新增、修改或觸發提醒。若次數用完，您可以隔天再使用，或觀看廣告立即解鎖更多次數。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq10">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10" aria-expanded="false" aria-controls="collapse10">
+                    免費版每天有幾次提醒？
+                </button>
+            </h2>
+            <div id="collapse10" class="accordion-collapse collapse" aria-labelledby="faq10" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    免費版每天預設提供 5 次提醒次數。當次數用完後，隔日會自動刷新，或考慮升級方案擴充次數。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq11">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse11" aria-expanded="false" aria-controls="collapse11">
+                    如何變更語音的性別？
+                </button>
+            </h2>
+            <div id="collapse11" class="accordion-collapse collapse" aria-labelledby="faq11" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    在設定頁面中，付費版可以選擇不同人聲。如需支援多種語音，請留意後續版本更新。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq12">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse12" aria-expanded="false" aria-controls="collapse12">
+                    為什麼打開鬧鐘會有AI星星動畫？
+                </button>
+            </h2>
+            <div id="collapse12" class="accordion-collapse collapse" aria-labelledby="faq12" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    當鬧鐘啟用時，會在卡片上顯示呼吸閃爍的AI星星，表示此鬧鐘處於啟用狀態，方便您快速辨識。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq13">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse13" aria-expanded="false" aria-controls="collapse13">
+                    為什麼鬧鐘有時沒有準時響？
+                </button>
+            </h2>
+            <div id="collapse13" class="accordion-collapse collapse" aria-labelledby="faq13" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    請確認 App 沒有被關閉，並開啟「允許背景運作」權限。部分手機可能需將 App 加入白名單，避免系統省電機制影響。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq14">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse14" aria-expanded="false" aria-controls="collapse14">
+                    App 被滑掉後鬧鐘還會響嗎？
+                </button>
+            </h2>
+            <div id="collapse14" class="accordion-collapse collapse" aria-labelledby="faq14" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    本 App 採用系統級權限，即使 App 被滑掉也會嘗試準時觸發鬧鐘。但由於部分手機會限制背景行為，請務必確認 App 未被電池管理或系統清理工具限制。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq15">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse15" aria-expanded="false" aria-controls="collapse15">
+                    為什麼沒有出現來電畫面？
+                </button>
+            </h2>
+            <div id="collapse15" class="accordion-collapse collapse" aria-labelledby="faq15" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    如果 App 被關閉或滑掉，有時無法正常觸發模擬來電畫面。可考慮允許本 App 開啟通知權限，並排除系統節電策略，以確保通知和來電能正常顯示。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq16">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse16" aria-expanded="false" aria-controls="collapse16">
+                    怎麼讓提醒在休眠時也能準時響？
+                </button>
+            </h2>
+            <div id="collapse16" class="accordion-collapse collapse" aria-labelledby="faq16" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    請開啟『允許鬧鐘或通知』權限，並將 App 加入電池優化例外名單，避免鬧鐘被系統延遲或忽略。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq17">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse17" aria-expanded="false" aria-controls="collapse17">
+                    聲音內容怎麼產生的？
+                </button>
+            </h2>
+            <div id="collapse17" class="accordion-collapse collapse" aria-labelledby="faq17" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    系統會依照您輸入的文字與選擇的語音風格，自動透過AI產生語音，並儲存在本機，無需每次重新下載。
+                </div>
+            </div>
+        </div>
+
+        <div class="accordion-item">
+            <h2 class="accordion-header" id="faq18">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse18" aria-expanded="false" aria-controls="collapse18">
+                    鬧鐘關閉螢幕後就沒作用了？
+                </button>
+            </h2>
+            <div id="collapse18" class="accordion-collapse collapse" aria-labelledby="faq18" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                    請確認已授予背景執行權限，並避免使用省電模式。部分手機如小米、華為、vivo 須手動設定允許自啟動。
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
